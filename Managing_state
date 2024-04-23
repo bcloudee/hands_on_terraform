@@ -8,9 +8,9 @@ terraform {
   }
   # Copy and paste from cloud code block from terraform cloud
   cloud {
-    organization = "terraform-hands-onsk"
+    organization = ""
     workspaces {
-      name = "remotestate"
+      name = ""
     }
   }
 }
@@ -21,11 +21,11 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name     = "1-dd8a16c5-playground-sandbox"
-  location = "East US"
+  name     = ""
+  location = ""
 }
 
-# terraform init
+# terraform init -> terraform improt resource group
 # terraform login -> yes -> Create API token -> Copy & paste on value secion in terminal
 # terraform init -> yes
 # rm terraform.tfstate - to delete local terraform state file
