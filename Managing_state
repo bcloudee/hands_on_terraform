@@ -25,7 +25,7 @@ resource "azurerm_resource_group" "rg" {
   location = ""
 }
 
-# terraform init -> terraform improt resource group
+# terraform init -> terraform improt resource group -> terraform show
 # terraform login -> yes -> Create API token -> Copy & paste on value secion in terminal
 # terraform init -> yes
-# rm terraform.tfstate - to delete local terraform state file
+# rm terraform.tfstate - to delete local terraform state file*
